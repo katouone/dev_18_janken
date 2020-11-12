@@ -1,0 +1,104 @@
+/* ここから下に記載していく */
+
+
+/* 国旗の表示用 */
+.question{
+    width: 600px;
+    height: 200px;
+    margin: 30px auto;
+}
+
+.question > img{
+    height: 100%;
+    display: flex;
+    margin: auto;
+}
+
+/* スタートボタンエリア */
+.startarea{
+    width: 500px;
+    margin: auto;
+    display: flex;
+    
+}
+
+.start {
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: indianred;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    outline: none;
+    
+}
+
+.startarea :hover{
+    opacity: 0.6;
+}
+
+/* 出題文について */
+.title{
+    text-align: center;
+    font-size: 32px;
+    margin: 20px auto;
+}
+
+
+/* 選択肢について */
+
+.choicebox{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.choicearea{
+    /* background-color: bisque; */
+    /* border: solid 1px ; */
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.choicearea > p{
+    width: 90%;
+    height: 90%;
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    line-height: 45px;
+    border-radius: 5px;
+    
+}   
+
+.choicearea :hover {
+    opacity: 0.6;
+}
+
+
+
+/* 結果の表示 */
+.result{
+    width: 200px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.result > img {
+    width: 100%;
+    margin: auto;
+}
