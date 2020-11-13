@@ -31,7 +31,8 @@ $(function () {
         "タンザニア"
     ]
 
-
+    $(".title,.choicebox").hide(); //問題文と選択肢は隠しておく
+    
 
     // 画像の選択と解答の設定
 
@@ -54,7 +55,9 @@ $(function () {
         console.log(randImg);
         console.log(thisanswer);
 
+        $(".title,.choicebox").show(); //選択肢を出す
 
+        $(".choicearea > p").css("background-color",""); //選択肢の色がグレーになっている場合があるので元に戻す
 
         // 選択肢1を押した時のアクション
         $(".choices1").off("click");
@@ -67,11 +70,12 @@ $(function () {
             if(thisanswer == yourvalue){
                 // alert("正解");
                 console.log("正解")
-                $(".result").html('<img src="img/img_OK.png" alt="画像" />')
+                $(".result").html('<img src="img/img_OK.png" alt="画像" />');
             }else{
                 // alert("不正解");
                 console.log("不正解")
-                $(".result").html('<img src="img/img_NG.png" alt="画像" />')
+                $(".result").html('<img src="img/img_NG.png" alt="画像" />');
+                $(".choices1").css("background-color","#c0c0c0");
             }
 
         });
@@ -85,11 +89,12 @@ $(function () {
             if(thisanswer == yourvalue){
                 // alert("正解");
                 console.log("正解")
-                $(".result").html('<img src="img/img_OK.png" alt="画像" />')
+                $(".result").html('<img src="img/img_OK.png" alt="画像" />');
             }else{
                 // alert("不正解");
                 console.log("不正解")
-                $(".result").html('<img src="img/img_NG.png" alt="画像" />')
+                $(".result").html('<img src="img/img_NG.png" alt="画像" />');
+                $(".choices2").css("background-color","#c0c0c0");
             }
 
         
@@ -104,11 +109,12 @@ $(function () {
             if(thisanswer == yourvalue){
                 // alert("正解");
                 console.log("正解")
-                $(".result").html('<img src="img/img_OK.png" alt="画像" />')
+                $(".result").html('<img src="img/img_OK.png" alt="画像" />');
             }else{
                 // alert("不正解");
                 console.log("不正解")
-                $(".result").html('<img src="img/img_NG.png" alt="画像" />')
+                $(".result").html('<img src="img/img_NG.png" alt="画像" />');
+                $(".choices3").css("background-color","#c0c0c0");
             }
 
             
@@ -123,11 +129,12 @@ $(function () {
             if(thisanswer == yourvalue){
                 // alert("正解");
                 console.log("正解")
-                $(".result").html('<img src="img/img_OK.png" alt="画像" />')
+                $(".result").html('<img src="img/img_OK.png" alt="画像" />');
             }else{
                 // alert("不正解");
                 console.log("不正解")
-                $(".result").html('<img src="img/img_NG.png" alt="画像" />')
+                $(".result").html('<img src="img/img_NG.png" alt="画像" />');
+                $(".choices4").css("background-color","#c0c0c0");
             }
 
             
@@ -142,11 +149,12 @@ $(function () {
             if(thisanswer == yourvalue){
                 // alert("正解");
                 console.log("正解")
-                $(".result").html('<img src="img/img_OK.png" alt="画像" />')
+                $(".result").html('<img src="img/img_OK.png" alt="画像" />');
             }else{
                 // alert("不正解");
                 console.log("不正解")
-                $(".result").html('<img src="img/img_NG.png" alt="画像" />')
+                $(".result").html('<img src="img/img_NG.png" alt="画像" />');
+                $(".choices5").css("background-color","#c0c0c0");
             }
 
             
@@ -161,11 +169,12 @@ $(function () {
             if(thisanswer == yourvalue){
                 // alert("正解");
                 console.log("正解")
-                $(".result").html('<img src="img/img_OK.png" alt="画像" />')
+                $(".result").html('<img src="img/img_OK.png" alt="画像" />');
             }else{
                 // alert("不正解");
                 console.log("不正解")
-                $(".result").html('<img src="img/img_NG.png" alt="画像" />')
+                $(".result").html('<img src="img/img_NG.png" alt="画像" />');
+                $(".choices6").css("background-color","#c0c0c0");
             }
 
             
@@ -180,11 +189,12 @@ $(function () {
             if(thisanswer == yourvalue){
                 // alert("正解");
                 console.log("正解")
-                $(".result").html('<img src="img/img_OK.png" alt="画像" />')
+                $(".result").html('<img src="img/img_OK.png" alt="画像" />');
             }else{
                 // alert("不正解");
                 console.log("不正解")
-                $(".result").html('<img src="img/img_NG.png" alt="画像" />')
+                $(".result").html('<img src="img/img_NG.png" alt="画像" />');
+                $(".choices7").css("background-color","#c0c0c0");
             }
 
             
@@ -200,11 +210,12 @@ $(function () {
             if(thisanswer == yourvalue){
                 // alert("正解");
                 console.log("正解")
-                $(".result").html('<img src="img/img_OK.png" alt="画像" />')
+                $(".result").html('<img src="img/img_OK.png" alt="画像" />');
             }else{
                 // alert("不正解");
                 console.log("不正解")
-                $(".result").html('<img src="img/img_NG.png" alt="画像" />')
+                $(".result").html('<img src="img/img_NG.png" alt="画像" />');
+                $(".choices8").css("background-color","#c0c0c0");
             }
 
             
@@ -219,11 +230,12 @@ $(function () {
             if(thisanswer == yourvalue){
                 // alert("正解");
                 console.log("正解")
-                $(".result").html('<img src="img/img_OK.png" alt="画像" />')
+                $(".result").html('<img src="img/img_OK.png" alt="画像" />');
             }else{
                 // alert("不正解");
                 console.log("不正解")
-                $(".result").html('<img src="img/img_NG.png" alt="画像" />')
+                $(".result").html('<img src="img/img_NG.png" alt="画像" />');
+                $(".choices9").css("background-color","#c0c0c0");
             }
 
             
@@ -238,11 +250,12 @@ $(function () {
             if(thisanswer == yourvalue){
                 // alert("正解");
                 console.log("正解")
-                $(".result").html('<img src="img/img_OK.png" alt="画像" />')
+                $(".result").html('<img src="img/img_OK.png" alt="画像" />');
             }else{
                 // alert("不正解");
                 console.log("不正解")
-                $(".result").html('<img src="img/img_NG.png" alt="画像" />')
+                $(".result").html('<img src="img/img_NG.png" alt="画像" />');
+                $(".choices10").css("background-color","#c0c0c0");
             }
 
             
